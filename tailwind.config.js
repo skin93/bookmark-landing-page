@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bookmark-purple": "#6267DF",
+        "bookmark-purple": "#5267DF",
         "bookmark-red": "#FA5959",
         "bookmark-blue": "#242A45",
         "bookmark-grey": "#9194A2",
