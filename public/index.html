@@ -16,24 +16,33 @@
   </head>
   <body class="font-Poppins overflow-x-hidden">
     <header>
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-        <div class="py-1">
-          <img src="./assets/images/logo-bookmark.svg" alt="Logo" />
+      <nav
+        class="container flex items-center py-4 mt-4 sm:mt-12"
+        aria-label="nav-container"
+      >
+        <div class="py-1" aria-label="nav-logo-wrapper">
+          <img
+            src="./assets/images/logo-bookmark.svg"
+            alt="Logo"
+            aria-label="nav-logo"
+          />
         </div>
         <ul
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs"
+          aria-label="nav-list"
         >
-          <li class="cursor-pointer">Features</li>
-          <li class="cursor-pointer">Pricing</li>
-          <li class="cursor-pointer">Contact</li>
+          <li class="cursor-pointer" aria-label="nav-item">Features</li>
+          <li class="cursor-pointer" aria-label="nav-item">Pricing</li>
+          <li class="cursor-pointer" aria-label="nav-item">Contact</li>
           <button
             type="button"
             class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
+            aria-label="nav-button"
           >
             Login
           </button>
         </ul>
-        <div class="flex sm:hidden flex-1 justify-end">
+        <div class="flex sm:hidden flex-1 justify-end" aria-label="nav-toggle">
           <div class="text-2xl fas fa-bars"></div>
         </div>
       </nav>
