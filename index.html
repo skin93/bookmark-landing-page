@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>Bookmark Landing Page</title>
+  </head>
+  <body class="font-Poppins overflow-x-hidden">
+    <header>
+      <nav
+        class="container flex items-center py-4 mt-4 sm:mt-12"
+        aria-label="nav-container"
+      >
+        <div class="py-1" aria-label="nav-logo-wrapper">
+          <img
+            src="./assets/images/logo-bookmark.svg"
+            alt="Logo"
+            aria-label="nav-logo"
+          />
+        </div>
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs"
+          aria-label="nav-list"
+        >
+          <li class="cursor-pointer" aria-label="nav-item">Features</li>
+          <li class="cursor-pointer" aria-label="nav-item">Pricing</li>
+          <li class="cursor-pointer" aria-label="nav-item">Contact</li>
+          <button
+            type="button"
+            class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase"
+            aria-label="nav-button"
+          >
+            Login
+          </button>
+        </ul>
+        <div class="flex sm:hidden flex-1 justify-end" aria-label="nav-toggle">
+          <div class="text-2xl fas fa-bars"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main aria-label="main-content">
+      <section class="relative" aria-label="hero-section">
+        <div
+          class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
+          aria-label="hero-container"
+        >
+          <div
+            class="flex flex-1 flex-col items-center lg:items-start"
+            aria-label="hero-content"
+          >
+            <h2
+              class="text-bookmark-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6"
+              aria-label="hero-title"
+            >
+              A Simple Bookmark Manager
+            </h2>
+            <p
+              class="text-bookmark-gray text-lg text-center lg:text-left mb-6"
+              aria-label="hero-desc"
+            >
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and sites load instantly. Try it for free.
+            </p>
+            <div
+              class="flex justify-center flex-wrap gap-6"
+              aria-label="buttons-wrapper"
+            >
+              <button
+                class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+                type="button"
+                aria-label="chrome-button"
+              >
+                Get to on Chrome
+              </button>
+              <button
+                class="btn btn-white hover:bg-bookmark-purple hover:text-white"
+                type="button"
+                aria-label="firefox-button"
+              >
+                Get to on Firefox
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10"
+            aria-label="hero-img-wrapper"
+          >
+            <img
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="./assets/images/hero-bg.png"
+              alt="Hero background"
+              aria-label="hero-img"
+            />
+          </div>
+          <div
+            class="absolute hidden md:block bg-bookmark-purple rounded-l-full h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"
+            aria-label="rounded-rectangle"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="bg-bookmark-white py-20 mt-20 lg:mt-60"
+        aria-label="features-section"
+      >
+        <div
+          class="sm:w-3/4 lg:w-5/12 mx-auto px-2"
+          aria-label="features-heading"
+        >
+          <h1
+            class="text-3xl text-center text-bookmark-blue"
+            aria-label="features-heading"
+          >
+            Features
+          </h1>
+          <p
+            class="text-center text-bookmark-grey mt-4"
+            aria-label="features-info"
+          >
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+
+        <div class="relative mt-20 lg:mt-24" aria-label="feature-item">
+          <div
+            class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+            aria-label="feature-container"
+          >
+            <div
+              class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+              aria-label="feature-img-wrapper"
+            >
+              <img
+                class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                src="./assets/images/illustration-features-tab-1.png"
+                alt="Feature 1"
+                aria-label="feature-img"
+              />
+            </div>
+            <div
+              class="flex flex-1 flex-col items-center lg:items-start"
+              aria-label="feature-content"
+            >
+              <h1
+                class="text-3xl text-bookmark-blue"
+                aria-label="feature-title"
+              >
+                Bookmark in one click
+              </h1>
+              <p
+                class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+                aria-label="feature-desc"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                type="button"
+                class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+                aria-label="button-more-info"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+            aria-label="rounded-rectangle"
+          ></div>
+        </div>
+
+        <div class="relative mt-20 lg:mt-52" aria-label="feature-item">
+          <div
+            class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24"
+            aria-label="feature-container"
+          >
+            <div
+              class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+              aria-label="feature-img-wrapper"
+            >
+              <img
+                class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                src="./assets/images/illustration-features-tab-2.png"
+                alt="Feature 2"
+                aria-label="feature-img"
+              />
+            </div>
+
+            <div
+              class="flex flex-1 flex-col items-center lg:items-start"
+              aria-label="feature-content"
+            >
+              <h1
+                class="text-3xl text-bookmark-blue"
+                aria-label="feature-title"
+              >
+                Intelligent search
+              </h1>
+              <p
+                class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+                aria-label="feature-desc"
+              >
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to crawl through all of your bookmarks.
+              </p>
+              <button
+                type="button"
+                class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+                aria-label="button-more-info"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 -bottom-24 -right-36"
+            aria-label="rounded-rectangle"
+          ></div>
+        </div>
+
+        <div class="relative mt-20 lg:mt-52" aria-label="feature-item">
+          <div
+            class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
+            aria-label="feature-container"
+          >
+            <div
+              class="flex flex-1 justify-center z-10 mb-10 lg:mb-0"
+              aria-label="feature-img-wrapper"
+            >
+              <img
+                class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+                src="./assets/images/illustration-features-tab-3.png"
+                alt="Feature 3"
+                aria-label="feature-img"
+              />
+            </div>
+
+            <div
+              class="flex flex-1 flex-col items-center lg:items-start"
+              aria-label="feature-content"
+            >
+              <h1
+                class="text-3xl text-bookmark-blue"
+                aria-label="feature-title"
+              >
+                Share your bookmarks
+              </h1>
+              <p
+                class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full"
+                aria-label="feature-desc"
+              >
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button
+                type="button"
+                class="btn btn-purple hover:bg-bookmark-white hover:text-black"
+                aria-label="button-more-info"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div
+            class="hidden lg:block bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36"
+            aria-label="rounded-rectangle"
+          ></div>
+        </div>
+      </section>
+
+      <section class="py-20 mt-20" aria-label="download-section">
+        <div
+          class="sm:w-3/4 lg:w-5/12 mx-auto px-2"
+          aria-label="download-heading"
+        >
+          <h1
+            class="text-3xl text-center text-bookmark-blue"
+            aria-label="download-heading"
+          >
+            Download
+          </h1>
+          <p
+            class="text-center text-bookmark-grey mt-4"
+            aria-label="download-info"
+          >
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like to prioritize.
+          </p>
+        </div>
+        <div
+          class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16"
+          aria-label="grid-container"
+        >
+          <div
+            class="flex flex-col rounded-md shadow-md lg:mb-16"
+            aria-label="card"
+          >
+            <div
+              class="p-6 flex flex-col items-center"
+              aria-label="card-img-wrapper"
+            >
+              <img
+                src="./assets/images/logo-chrome.svg"
+                alt="Chrome logo"
+                aria-label="card-img"
+              />
+              <h3
+                class="mt-5 mb-2 text-bookmark-blue text-lg"
+                aria-label="card-title"
+              >
+                Add to Chrome
+              </h3>
+              <p
+                class="mb-2 text-bookmark-grey font-light"
+                aria-label="card-desc"
+              >
+                Minimum version 62
+              </p>
+              <hr class="border-b border-bookmark-white" />
+              <div class="flex px-3 py-6">
+                <button
+                  type="button"
+                  class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-md shadow-md lg:my-8"
+            aria-label="card"
+          >
+            <div
+              class="p-6 flex flex-col items-center"
+              aria-label="card-img-wrapper"
+            >
+              <img
+                src="./assets/images/logo-firefox.svg"
+                alt="Firefox logo"
+                aria-label="card-img"
+              />
+              <h3
+                class="mt-5 mb-2 text-bookmark-blue text-lg"
+                aria-label="card-title"
+              >
+                Add to Firefox
+              </h3>
+              <p
+                class="mb-2 text-bookmark-grey font-light"
+                aria-label="card-desc"
+              >
+                Minimum version 62
+              </p>
+              <hr class="border-b border-bookmark-white" />
+              <div class="flex px-3 py-6">
+                <button
+                  type="button"
+                  class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+                  aria-label="card-button"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col rounded-md shadow-md lg:mt-16"
+            aria-label="card"
+          >
+            <div
+              class="p-6 flex flex-col items-center"
+              aria-label="card-img-wrapper"
+            >
+              <img
+                src="./assets/images/logo-opera.svg"
+                alt="Chrome logo"
+                aria-label="card-img"
+              />
+              <h3
+                class="mt-5 mb-2 text-bookmark-blue text-lg"
+                aria-label="card-title"
+              >
+                Add to Opera
+              </h3>
+              <p
+                class="mb-2 text-bookmark-grey font-light"
+                aria-label="card-desc"
+              >
+                Minimum version 62
+              </p>
+              <hr class="border-b border-bookmark-white" />
+              <div class="flex px-3 py-6">
+                <button
+                  type="button"
+                  class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+                  aria-label="card-button"
+                >
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-bookmark-white py-20" aria-label="faq-section">
+        <div class="container" aria-label="faq-container">
+          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" aria-label="faq-heading">
+            <h1
+              class="text-3xl text-center text-bookmark-blue"
+              aria-label="faq-heading"
+            >
+              FAQ
+            </h1>
+            <p
+              class="text-center text-bookmark-grey mt-4"
+              aria-label="faq-info"
+            >
+              Here are some of our FAQs. If you have any other questions you'd
+              like answered please feel free
+            </p>
+          </div>
+          <div
+            class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto"
+            aria-label="faq-items"
+          >
+            <div class="flex itemms-center border-b py-4">
+              <span class="flex-1">What is a Bookmark?</span>
+              <i class="text-bookmark-purple fas fa-chevron-down"></i>
+            </div>
+            <div class="flex itemms-center border-b py-4">
+              <span class="flex-1">How can I request a new browser?</span>
+              <i class="text-bookmark-purple fas fa-chevron-down"></i>
+            </div>
+            <div class="flex itemms-center border-b py-4">
+              <span class="flex-1">Is there a mobile app?</span>
+              <i class="text-bookmark-purple fas fa-chevron-down"></i>
+            </div>
+            <div class="flex itemms-center border-b py-4">
+              <span class="flex-1">What about other Chromium browsers?</span>
+              <i class="text-bookmark-purple fas fa-chevron-down"></i>
+            </div>
+            <button
+              type="button"
+              class="mt-12 flex self-center btn btn-purple hover:bg-bookmark-white hover:text-black"
+            >
+              More info
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-bookmark-purple text-white py-20"
+        aria-label="contact-section"
+      >
+        <div class="container" aria-label="contact-container">
+          <div class="sm:w-3/4 lg:w-2/4 mx-auto" aria-label="contact-wrapper">
+            <p
+              class="font-light uppercase text-center mb-8"
+              aria-label="contact-info"
+            >
+              35,00+ ALREADY JOINED
+            </p>
+            <h1 class="text-3xl text-center" aria-label="contact-heading">
+              Stay up-to-date with what we're doing
+            </h1>
+            <div
+              class="flex flex-col sm:flex-row gap-6 mt-8"
+              aria-label="contact-form"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+                aria-label="contact-input"
+              />
+              <button
+                class="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black"
+                type="button"
+                aria-label="chrome-button"
+                aria-labelledby="contact-btn"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-bookmark-blue py-8" aria-label="footer">
+      <div
+        class="container flex flex-col md:flex-row items-center"
+        aria-label="footer-container"
+      >
+        <div
+          class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12"
+          aria-label="footer-wrapper"
+        >
+          <img
+            src="./assets/images/logo-bookmark-white.png"
+            alt="Logo"
+            aria-label="footer-img"
+          />
+          <ul
+            class="flex text-white uppercase gap-12 text-xs"
+            aria-label="footer-list"
+          >
+            <li class="cursor-pointer" aria-label="footer-item">Features</li>
+            <li class="cursor-pointer" aria-label="footer-item">Pricing</li>
+            <li class="cursor-pointer" aria-label="footer-item">Contact</li>
+          </ul>
+        </div>
+        <ul class="flex gap-10 mt-12 md:mt-0" aria-label="footer-medias">
+          <li>
+            <i
+              class="text-white text-2xl fab fa-twitter"
+              aria-label="footer-media-item"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="text-white text-2xl fab fa-facebook-square"
+              aria-label="footer-media-item"
+            ></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
