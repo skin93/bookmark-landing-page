@@ -11,10 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Bookmark Landing Page</title>
   </head>
-  <body class="font-Poppins overflow-x-hidden">
+  <body class="font-Poppins overflow-x-hidden" data-aos="fade-in">
     <header>
       <nav
         class="container flex items-center py-4 mt-4 sm:mt-12"
@@ -31,7 +32,7 @@
           class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs"
           aria-label="nav-list"
         >
-          <li class="cursor-pointer" aria-label="nav-item">Features</li>
+          <li b class="cursor-pointer" aria-label="nav-item">Features</li>
           <li class="cursor-pointer" aria-label="nav-item">Pricing</li>
           <li class="cursor-pointer" aria-label="nav-item">Contact</li>
           <button
@@ -116,6 +117,7 @@
         <div
           class="sm:w-3/4 lg:w-5/12 mx-auto px-2"
           aria-label="features-heading"
+          data-aos="fade-in"
         >
           <h1
             class="text-3xl text-center text-bookmark-blue"
@@ -133,7 +135,11 @@
           </p>
         </div>
 
-        <div class="relative mt-20 lg:mt-24" aria-label="feature-item">
+        <div
+          data-aos="fade-right"
+          class="relative mt-20 lg:mt-24"
+          aria-label="feature-item"
+        >
           <div
             class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
             aria-label="feature-container"
@@ -183,7 +189,11 @@
           ></div>
         </div>
 
-        <div class="relative mt-20 lg:mt-52" aria-label="feature-item">
+        <div
+          data-aos="fade-left"
+          class="relative mt-20 lg:mt-52"
+          aria-label="feature-item"
+        >
           <div
             class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24"
             aria-label="feature-container"
@@ -233,7 +243,11 @@
           ></div>
         </div>
 
-        <div class="relative mt-20 lg:mt-52" aria-label="feature-item">
+        <div
+          data-aos="fade-right"
+          class="relative mt-20 lg:mt-52"
+          aria-label="feature-item"
+        >
           <div
             class="container flex flex-col lg:flex-row items-center justify-center gap-x-24"
             aria-label="feature-container"
@@ -287,6 +301,7 @@
         <div
           class="sm:w-3/4 lg:w-5/12 mx-auto px-2"
           aria-label="download-heading"
+          data-aos="fade-in"
         >
           <h1
             class="text-3xl text-center text-bookmark-blue"
@@ -309,6 +324,7 @@
           <div
             class="flex flex-col rounded-md shadow-md lg:mb-16"
             aria-label="card"
+            data-aos="fade-up"
           >
             <div
               class="p-6 flex flex-col items-center"
@@ -345,6 +361,7 @@
           <div
             class="flex flex-col rounded-md shadow-md lg:my-8"
             aria-label="card"
+            data-aos="fade-down"
           >
             <div
               class="p-6 flex flex-col items-center"
@@ -382,6 +399,7 @@
           <div
             class="flex flex-col rounded-md shadow-md lg:mt-16"
             aria-label="card"
+            data-aos="fade-up"
           >
             <div
               class="p-6 flex flex-col items-center"
@@ -421,7 +439,11 @@
 
       <section class="bg-bookmark-white py-20" aria-label="faq-section">
         <div class="container" aria-label="faq-container">
-          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2" aria-label="faq-heading">
+          <div
+            class="sm:w-3/4 lg:w-5/12 mx-auto px-2"
+            aria-label="faq-heading"
+            data-aos="fade-in"
+          >
             <h1
               class="text-3xl text-center text-bookmark-blue"
               aria-label="faq-heading"
@@ -440,25 +462,43 @@
             class="flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto"
             aria-label="faq-items"
           >
-            <div class="flex itemms-center border-b py-4">
+            <div
+              class="flex itemms-center border-b py-4"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
               <span class="flex-1">What is a Bookmark?</span>
               <i class="text-bookmark-purple fas fa-chevron-down"></i>
             </div>
-            <div class="flex itemms-center border-b py-4">
+            <div
+              class="flex itemms-center border-b py-4"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
               <span class="flex-1">How can I request a new browser?</span>
               <i class="text-bookmark-purple fas fa-chevron-down"></i>
             </div>
-            <div class="flex itemms-center border-b py-4">
+            <div
+              class="flex itemms-center border-b py-4"
+              data-aos="fade-down"
+              data-aos-delay="700"
+            >
               <span class="flex-1">Is there a mobile app?</span>
               <i class="text-bookmark-purple fas fa-chevron-down"></i>
             </div>
-            <div class="flex itemms-center border-b py-4">
+            <div
+              class="flex itemms-center border-b py-4"
+              data-aos="fade-down"
+              data-aos-delay="900"
+            >
               <span class="flex-1">What about other Chromium browsers?</span>
               <i class="text-bookmark-purple fas fa-chevron-down"></i>
             </div>
             <button
               type="button"
               class="mt-12 flex self-center btn btn-purple hover:bg-bookmark-white hover:text-black"
+              data-aos="fade-in"
+              data-aos-delay="900"
             >
               More info
             </button>
@@ -469,7 +509,11 @@
         class="bg-bookmark-purple text-white py-20"
         aria-label="contact-section"
       >
-        <div class="container" aria-label="contact-container">
+        <div
+          class="container"
+          aria-label="contact-container"
+          data-aos="fade-in"
+        >
           <div class="sm:w-3/4 lg:w-2/4 mx-auto" aria-label="contact-wrapper">
             <p
               class="font-light uppercase text-center mb-8"
@@ -507,6 +551,8 @@
       <div
         class="container flex flex-col md:flex-row items-center"
         aria-label="footer-container"
+        data-aos="fade-in"
+        data-aos-offset="0"
       >
         <div
           class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12"
@@ -542,5 +588,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
